@@ -4,19 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/spectre-icons.css">
-    <link rel="stylesheet" href="./assets/css/spectre.css">
-    <link rel="stylesheet" href="./assets/css/spectre-exp.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">    
     <script src="./assets/JS/scripts.js" defer></script>
     <title>Weather History App</title>
 </head>
 <body>
+  
   <header class="navbar">
-    <section class="navbar-section">
-      <a href="./index.html" class="btn btn-link">Home</a>
-    </section>
     <section class="navbar-center">
       <h1>Weather Greatness</h1>
     </section>
@@ -28,19 +24,62 @@
       </section>
     </section>
   </header>
-  <footer class="navbar">
-    <section class="navbar-section">
-      <a href="#" class="btn btn-link">Github</a>
-    </section>
-    <section class="navbar-center">
-      <h4>&#xa9; JT_Codes</h4>
-    </section>
-    <section class="navbar-section">
-        <div class="input-group input-inline">
+
+  <h2 class="fiveDayForecast">5-Day Forecast for 5pm Daily</h2>
+    <container>
+      <div class="row">
+        <div id="day1" class="card text-white">
+          <h5 class="card-header" id="1date"></h5>
+            <div class="card-body">
+            <p class="card-title" id="1fiveDayTemp"></p>
+            <p class="card-text" id="1fiveDayHumidity"></p>
+            <img id="1fiveDayIcon" src="">
         </div>
-      </section>
-    </section>
-  </footer>
+        </div>
+      
+        <div id="day2" class="card text-white">
+          <h5 class="card-header" id="1date"></h5>
+            <div class="card-body">
+              <p class="card-title" id="1fiveDayTemp"></p>
+              <p class="card-text" id="1fiveDayHumidity"></p>
+              <img id="1fiveDayIcon" src="">
+            </div>
+        </div>
+      
+        <div id="day3" class="card text-white">
+          <h5 class="card-header" id="2date"></h5>
+          <div class="card-body">
+            <p class="card-title" id="2fiveDayTemp"></p>
+            <p class="card-text" id="2fiveDayHumidity"></p>
+            <img id="2fiveDayIcon" src="">
+          </div>
+        </div>
+      
+        <div id="day4" class="card text-white">
+          <h5 class="card-header" id="3date"></h5>
+          <div class="card-body">
+            <p class="card-title" id="3fiveDayTemp"></p>
+            <p class="card-text" id="3fiveDayHumidity"></p>
+            <img id="3fiveDayIcon" src="">
+          </div>
+        </div>
+        
+        <div id="day5" class="card text-white">
+          <h5 class="card-header" id="4date"></h5>
+          <div class="card-body">
+            <p class="card-title" id="4fiveDayTemp"></p>
+            <p class="card-text" id="4fiveDayHumidity"></p>
+            <img id="4fiveDayIcon" src="">
+          </div>
+        </div>
+    </container>
+  
+    <div class="container">
+      <nav class="navbar fixed-bottom navbar-white bg-secondary" .text-white>
+          <a class="footer" class="navbar-brand" href="#">&#xA9; JT_Codes</a>
+      </nav>
+      <div class="container text-center"></div>
+  </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
